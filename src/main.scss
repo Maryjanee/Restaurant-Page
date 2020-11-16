@@ -1,3 +1,54 @@
+$white: white;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 body{
   background: green;
 }
+
+li{
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+}
+
+img{
+  width:100%;
+}
+
+.d-flex{
+  display:flex;
+}
+
+.jc-center{
+  justify-content: center;
+}
+
+.ac-center{
+  align-items: center;
+}
+
+.container{
+  width:90%;
+  margin:0 auto;
+  height:100%;
+ 
+}
+
+header{
+  height:100vh;
+}
+nav{
+  width:100%;
+  background:yellow;
+  color:white;
+  height:10rem;
+  border:1px solid black;  
+}
+
