@@ -134,10 +134,17 @@ li:hover, li:active{
    margin:2rem 0;
    border:2px solid $white;
    font-size:1.2rem;
-   font-family: 'Quicksand', sans-serif;
-   
-   
+   font-family: 'Quicksand', sans-serif; 
  }
+}
+
+footer{
+  background:#101012;
+  
+  p{
+    color:$white;
+    padding: 2rem;
+  }
 }
 
 
