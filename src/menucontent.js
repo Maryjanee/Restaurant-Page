@@ -37,7 +37,9 @@ const heroDiv = () => {
 
 const sectionContent = () =>{
   const section = document.querySelector('section');
+  
   section.classList.remove('d-grid')
+  
   const menuItems = [{name:"Pizzarina", src: menuOne},{name:"Fruitfitta", src:menuTwo}, {name:"Pancake Fiesta", src:menuThree}, {name:"Vegetables", src:menuFour} ]
   
    while(section.firstChild){

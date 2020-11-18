@@ -7,6 +7,7 @@ import  homeImg from './images/home.jpg';
 import  contactImg from './images/contact.jpg';
 import {home} from './homecontent.js'
 import  {menuPageHeader} from './menucontent.js'
+import  {contactPage} from './contactcontent.js'
 
 
 const pageContent = document.querySelector('#content');
@@ -38,15 +39,15 @@ const homePage = () =>{
     })
 
 menuBtn.addEventListener('click', () =>{
-  document.querySelector('header img').src = menuImg;
+  
   menuPageHeader();
   
 
 })
 
 contactBtn.addEventListener('click', () => {
-  document.querySelector('header img').src = contactImg;
-  document.querySelector('main').style.background = "purple";
+  contactPage();
+  
 })
 
 

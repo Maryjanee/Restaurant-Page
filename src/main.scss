@@ -78,6 +78,10 @@ li:hover, li:active{
   cursor: pointer;
 }
 
+input,textarea{
+  width:100%;
+}
+
 .text-center{
   text-align: center;
 }
@@ -145,6 +149,7 @@ li:hover, li:active{
 }
 
 section{
+  
   padding:2rem 0; 
   grid-template-columns: 1fr 2fr 1fr;
   height:100vh;
@@ -210,6 +215,34 @@ footer{
     margin:1rem 0;
     font-weight:600; 
   }
+}
+
+#contact{
+  padding: 2rem 0;
+  height:80vh;
+  grid-template-columns:1fr 1fr;
+  grid-gap:3rem;
+  
+ 
+  
+  img{
+    width:100%;
+  }
+  .contact-info{
+    margin:4rem 0;
+    padding:1rem;
+  }
+  h5{
+    text-transform:uppercase;
+    font-size:2rem;
+    margin-bottom:1rem;
+    
+  }
+  p{
+    font-size:1.2rem;
+    margin-bottom:1.5rem;
+  }
+  
 }
 
 
