@@ -1,7 +1,7 @@
 import  menuImg from './images/menu.jpg';
 import  menuOne from './images/pizzarina.jpg';
 import  menuTwo from './images/fruitfitta.jpg';
-import  menuThree from './images/spagettini.jpg';
+import  menuThree from './images/pancakes.jpg';
 import  menuFour from './images/vegetables.jpg';
 import header from './header';
 import main  from './maincontent'
@@ -37,17 +37,27 @@ const heroDiv = () => {
 
 const sectionContent = () =>{
   const section = document.querySelector('section');
+  section.classList.remove('d-grid')
+  const menuItems = [{name:"Pizzarina", src: menuOne},{name:"Fruitfitta", src:menuTwo}, {name:"Pancake Fiesta", src:menuThree}, {name:"Vegetables", src:menuFour} ]
   
    while(section.firstChild){
     section.removeChild(section.firstChild);
   }
  const menuContainerGrid = document.createElement('div');
- menuContainerGrid.className = 'd-grid';
  
-  
+ menuContainerGrid.className = 'd-grid menu-container';
+  menuItems.forEach(function (arrayItem) {
+    let menuCard = document.createElement('div');
+    let menuImage = document.createElement('img');
+          menuImage.src = arrayItem.src ;
+      let menuTitle = document.createElement('h5');
+         menuTitle.innerText = arrayItem.name;
+          menuCard.appendChild(menuImage);
+          menuCard.appendChild(menuTitle);
+          menuContainerGrid.appendChild(menuCard);
+})
+  section.appendChild(menuContainerGrid)
   return section
-  
-  
 }
 
  export const menuPageHeader = () =>{

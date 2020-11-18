@@ -7,12 +7,9 @@ $white: white;
   margin:0;
   padding:0;
   box-sizing: border-box;
-}
-
-body{
   font-family: 'Quicksand', sans-serif;
-
 }
+
 
 li{
   list-style:none;
@@ -197,6 +194,21 @@ footer{
   p{
     color:$white;
     padding: 2rem;
+  }
+}
+
+.menu-container{
+  grid-template-columns:repeat(2, 1fr);
+  grid-column-gap: 3rem;
+  width:100%;
+  img{
+    width:100%;
+    height:40vh;
+  }
+  h5{
+    font-size:1.3rem;
+    margin:1rem 0;
+    font-weight:600; 
   }
 }
 
