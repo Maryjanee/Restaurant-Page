@@ -8,7 +8,8 @@ ul.className = 'd-flex';
 let navText = ["Home", "Menu", "Contact"]
 for (let i = 1; i <= 3; i++){
     let li = document.createElement("li");  
-    li.className = "nav-links";
+    li.className = "nav-links ";
+    li.id = `nav-link-${i}`;
     li.innerText = navText[i-1]
     ul.appendChild(li);
 }

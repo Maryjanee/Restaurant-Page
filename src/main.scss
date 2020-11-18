@@ -109,6 +109,9 @@ li:hover, li:active{
 .uppercase{
   text-transform: uppercase;
 }
+.active{
+  background-color:rgba(0, 0, 0, 0.5);
+}
 
 .spl-text{
   
@@ -138,6 +141,7 @@ li:hover, li:active{
  .lead{
    font-weight:600;
    font-size:3rem;
+   color:$white;
  }
  
  
