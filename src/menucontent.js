@@ -64,5 +64,4 @@ export default function menuPageHeader() {
   img.src = menuImg;
   heroDiv();
   sectionContent();
-  return header;
 }

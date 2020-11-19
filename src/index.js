@@ -26,14 +26,15 @@ homeBtn.addEventListener('click', () => {
   while (pageContent.firstChild) {
     pageContent.removeChild(pageContent.firstChild);
   }
+homePage();
+});
 
-  homePage();
+contactBtn.addEventListener('click', () => {
+  contactPage();
 });
 
 menuBtn.addEventListener('click', () => {
   menuPageHeader();
 });
 
-contactBtn.addEventListener('click', () => {
-  contactPage();
-});
+

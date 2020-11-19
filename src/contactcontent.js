@@ -65,6 +65,7 @@ const sectionContent = () => {
 export default function contactPage() {
   const img = document.querySelector('header img');
   img.src = contactImg;
-  heroDiv();
-  sectionContent();
+    sectionContent();
+    heroDiv();
+
 }
