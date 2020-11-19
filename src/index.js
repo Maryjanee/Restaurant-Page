@@ -26,7 +26,7 @@ homeBtn.addEventListener('click', () => {
   while (pageContent.firstChild) {
     pageContent.removeChild(pageContent.firstChild);
   }
-homePage();
+  homePage();
 });
 
 contactBtn.addEventListener('click', () => {
@@ -36,5 +36,3 @@ contactBtn.addEventListener('click', () => {
 menuBtn.addEventListener('click', () => {
   menuPageHeader();
 });
-
-

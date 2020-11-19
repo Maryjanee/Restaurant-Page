@@ -3,8 +3,6 @@ import menuOne from './images/pizzarina.jpg';
 import menuTwo from './images/fruitfitta.jpg';
 import menuThree from './images/pancakes.jpg';
 import menuFour from './images/vegetables.jpg';
-import header from './header';
-
 
 const heroDiv = () => {
   const heroDiv = document.querySelector('header div');
